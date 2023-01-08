@@ -1,0 +1,301 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ html {
+   font-size: 62.5%;
+   height: 100%;
+   width: 100%;
+ }
+ body {
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 1.6;
+ }
+ 
+header{
+   background-image: url('./img/navigation\ bar--bg.png');
+   height: auto;
+   width: 100%;
+   position: sticky;
+   top:0;
+   z-index: 50;
+}
+.navbar{
+   display:flex;
+  
+   justify-content: space-between;
+   align-items: center;
+}
+.rst{
+   text-decoration: none;
+   color:white;
+}
+.rst:hover{
+   background: 1px solid;
+   padding: 0.25rem 0.5rem;
+   background-color: #9a989890;
+}
+.container{
+   display:grid;
+   grid-template-areas: 
+   'home  about  contact ' ;
+   grid-gap: 2rem;
+   margin-right:5rem;
+   font-size: 1.5rem;
+   font-weight: bold;
+   font-family:Arial, Helvetica, sans-serif;
+   color:whitesmoke;
+}
+.first-section{
+   position: relative;
+   background: url('./img/header.png') no-repeat center center /cover;
+   height:87.6vh;
+   width: auto;
+   overflow: hidden;
+}
+.first-section h1{
+   position:absolute;
+   color:#731414;
+   font-size: 3.5rem;
+   top:10rem;
+   left:2rem;
+}
+
+.hauptsatz{
+   position:absolute;
+   top:15rem;
+   left:2rem;
+   color:#731414;
+   font-size: 2rem;
+}
+.hauptsatz-2{
+   position:absolute;
+   top:17.5rem;
+   left:2rem;
+   color:#731414;
+   font-size: 2rem;
+}
+.btn-1{
+   display:flex;
+   justify-content: space-evenly;
+   position: absolute;
+   border:none;
+   border-radius: 30px;
+   background: #731414;
+   height: auto;
+   width: 25rem;
+   font-size:2.2rem;
+   top:24rem;
+   left:2rem; 
+   text-decoration: none;
+   color:#8a8a8a;
+}
+.btn-1:hover{
+   background-color: black;
+   color:#731414;
+   font-weight:bolder;
+}
+.anime-1{
+   position:relative;
+   font-weight: bold;
+   color:#e7e7e772;
+   font-size: 1.5rem;
+   left:78%;
+   top:2rem;
+   padding-top:7rem;
+   opacity:0.8;
+   animation:animate 1.5s  ease-in-out;
+}
+#durable{
+   width:23.2rem;
+   height: 15rem;
+}
+
+@keyframes animate{
+   from{transform:translateY(-200%)}
+   to{transform:translateY(0)}
+}
+.anime-2{
+   position:absolute;
+   font-weight: bold;
+   color:#e7e7e772;
+   font-size: 1.5rem;
+   left:78%;
+   top:37rem;
+   opacity:0.8;
+   animation:animate-2 1.5s  ease-in-out;
+}
+#textile{
+   width:23.2rem;
+   height: 15rem;
+}
+@keyframes animate-2{
+   from{transform:translateX(200%)}
+   to{transform:translateX(0)}
+}
+
+main{
+   background: url(./img/section-2-bg.png) no-repeat center center/cover;
+   width:100%;
+   height: 60vh;
+}
+#tex{
+   font-weight: 900;
+   border:none;
+   padding-top:12rem;
+   padding-left:70rem;
+}
+.text-1{
+   border:none;
+   padding-top:2rem;
+   padding-left:70rem;
+   font-size: 1.3rem;
+}
+
+.container-1{
+animation: animy 2s ease-out;
+}
+
+@keyframes animy{
+   from{transform:scale(0)}
+   to{transform:scale(1)}
+}
+#katalog{
+   display: grid;
+   grid-template-areas: 
+   'title title title'
+   'pic-1 pic-2 pic-3';
+   max-width: 61%;
+   grid-gap: 4rem;;
+   margin: 1rem auto 2rem ;
+}
+.title{
+   display: flex;
+   justify-content: center;
+   grid-area: title;
+   font-size: 3rem;
+}
+.pic-1{
+   background: url(./img/haat\ 1.png) no-repeat center center /cover;
+   grid-area: pic-1;
+   opacity: 0.7;
+   width: 30rem;
+   height: 30rem;
+}
+.pic-1:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.pic-2{
+   
+   background: url(./img/haat\ 2.png) no-repeat center center /cover;
+   width: 30rem;
+   height: 30rem;
+   grid-area: pic-2;
+   opacity: 0.7;
+}
+.pic-2:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.pic-3{
+   
+   background: url(./img/haat\ 9.png) no-repeat center center /cover;
+   width: 30rem;
+   height: 30rem;
+   grid-area: pic-3;
+   opacity: 0.7;
+}
+.pic-3:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.katalog-1{
+   display: grid;
+   grid-template-areas: 
+   'title-1 title-1 title-1'
+   'pic-4 pic-5 pic-6';
+   max-width: 66%;
+   grid-gap: 4rem;;
+   margin: 1rem auto 1rem ;
+   overflow: hidden;
+}
+.title-1{
+   display: flex;
+   justify-content: center;
+   grid-area: title-1;
+   font-size: 3rem;
+}
+.pic-4{
+   background: url(./img/haat\ 4.png) no-repeat center center /cover;
+   grid-area: pic-4;
+   width: 30rem;
+   height: 30rem;
+   opacity: 0.7;
+   
+}
+.pic-4:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.pic-5{
+   background: url(./img/haat\ 5.png) no-repeat center center /cover;
+   width: 30rem;
+   height: 30rem;
+   grid-area: pic-5;
+   opacity: 0.7;
+}
+.pic-5:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.pic-6{
+   
+   background: url(./img/haat\ 7.png) no-repeat center center /cover;
+   width: 30rem;
+   height: 30rem;
+   grid-area: pic-6;
+   opacity: 0.7;
+}
+.pic-6:hover{
+   transform: scale(1.17);
+   transition: all 0.7s ease-out;
+   opacity: 1;
+}
+.container-2{
+   display:flex;
+   justify-content: space-around;
+   background: url(./img/Footer.png) no-repeat center center /cover;
+   width:100%;
+   height: 30vh;
+   
+}
+.adress{
+
+   color:silver;
+   font-size: 3rem;;
+}
+.adress h2 i{
+   margin-top: 4rem;
+   margin-left:17rem;
+   margin-bottom: 6rem;
+}
+.social{
+   font-size: 3rem;
+   color:rgba(12, 14, 126, 0.788);
+}
+.contact-1{
+   color:silver;
+   font-size: large;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+}
+
